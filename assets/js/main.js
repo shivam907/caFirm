@@ -12,24 +12,24 @@
 (function ($) {
   "use strict";
   // sticky menu
-  //   var header = $(".menu-sticky");
-  //   var win = $(window);
+    var header = $(".menu-sticky");
+    var win = $(window);
 
-  //   win.on("scroll", function () {
-  //     var scroll = win.scrollTop();
-  //     if (scroll < 370) {
-  //       header.removeClass("sticky");
-  //     } else {
-  //       header.addClass("sticky");
-  //     }
+    win.on("scroll", function () {
+      var scroll = win.scrollTop();
+      if (scroll < 370) {
+        header.removeClass("sticky");
+      } else {
+        header.addClass("sticky");
+      }
 
-  //     $("section").each(function () {
-  //       var elementTop = $(this).offset().top - $("#rs-header").outerHeight();
-  //       if (scroll >= elementTop) {
-  //         $(this).addClass("loaded");
-  //       }
-  //     });
-  //   });
+      $("section").each(function () {
+        var elementTop = $(this).offset().top - $("#rs-header").outerHeight();
+        if (scroll >= elementTop) {
+          $(this).addClass("loaded");
+        }
+      });
+    });
 
   //window load
   $(window).on("load", function () {
