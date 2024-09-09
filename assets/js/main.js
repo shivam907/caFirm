@@ -36,7 +36,7 @@
     $("#loading").delay(1500).fadeOut(500);
     $("#loading-center").on("click", function () {
       $("#loading").fadeOut(500);
-    });
+    });   
   });
 
   // onepage nav
